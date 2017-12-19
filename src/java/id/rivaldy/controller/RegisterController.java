@@ -34,6 +34,7 @@ public class RegisterController {
         String encryptedPassword = PasswordDigest.createEncryptedPassword(registerBean.getPassword());
         cus.setFirstName(registerBean.getFirstName());
         cus.setLastName(registerBean.getLastName());
+        cus.setEmail(registerBean.getEmail());
         cus.setUsername(registerBean.getUsername());
         cus.setPassword(encryptedPassword);
         

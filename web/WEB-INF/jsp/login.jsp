@@ -1,6 +1,6 @@
 <%-- 
-    Document   : register
-    Created on : Dec 16, 2017, 12:20:44 PM
+    Document   : login
+    Created on : Dec 18, 2017, 11:26:30 AM
     Author     : RomyRivaldy
 --%>
 
@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>${tRegister}</title>
+        <title>Login</title>
     </head>
     <body>
         <jsp:include page="header.jsp"/>
-        <jsp:include page="registerform.jsp"/>
+        <jsp:include page="loginform.jsp"/>
         <jsp:include page="footer.jsp"/>
     </body>
 </html>

@@ -30,7 +30,7 @@ public class Cart implements Serializable {
     Customer customer;
 
     @OneToMany(mappedBy = "cart")
-    List<Product> product;
+    private List<Product> carts;
 
     public Integer getId() {
         return id;
@@ -63,6 +63,14 @@ public class Cart implements Serializable {
     @Override
     public String toString() {
         return "id.rivaldy.model.Cart[ id=" + id + " ]";
+    }
+
+    public List<Product> getCarts() {
+        return carts;
+    }
+
+    public void setCarts(List<Product> carts) {
+        this.carts = carts;
     }
 
 }

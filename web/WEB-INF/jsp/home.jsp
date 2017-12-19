@@ -13,7 +13,7 @@
     </head>
     <body>
         <jsp:include page="header.jsp"/>
-        <h1>${mHome}</h1>
+        <jsp:include page="homeform.jsp"/>
         <jsp:include page="footer.jsp"/>
     </body>
 </html>
