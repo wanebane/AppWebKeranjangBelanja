@@ -8,24 +8,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="${pageContext.request.contextPath}/resources/theme1/bootstrap.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             .footer{
                 position: static;
                 width: 100%;
-                height: 50px;
+                height: auto;
                 bottom: 0;
                 background-color: #265a88;
                 color: whitesmoke;
                 text-align: center;
             }
+            
         </style>
 
     </head>
     <body>
         <div class="footer">
-            <h1>Ini footer bukan kaki loh</h1>
+            <h2>Web Tester</h2>
+            <br/>
+            <p>&copy Copyright by Rivaldy 2017</p>
         </div>
     </body>
 </html>

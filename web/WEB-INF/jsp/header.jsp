@@ -52,11 +52,8 @@
             <a style="float:right" href="${pageContext.request.contextPath}/register">
                 <i class="glyphicon glyphicon-user"></i> Register
             </a>
-            <a style="float:right" href="${pageContext.request.contextPath}/cart">
-                <i class="glyphicon glyphicon-shopping-cart"></i> Carts 
-                <span class="badge"> 0</span>
+            <a style="float:right" href="${pageContext.request.contextPath}/cart/show">
+                <i class="glyphicon glyphicon-shopping-cart"></i> Carts : ${cart.carts.size()}
+                <!--<span class="badge"> 0</span>-->
             </a>
         </div>
-        
-    </body>
-</html>

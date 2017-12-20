@@ -21,28 +21,32 @@
                     <b> Product List</b> 
                 </h1>
             </div>
-        </div>
-        <div class="panel panel-primary">
-            <div class="panel-heading">Tabel Product</div>
-            <table class="table">
-                <tr class="success">
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Stock</th>
-                    <th>Note</th>
-                </tr>
-                <c:forEach var="c" items="${product}">
-                    <tr class="warning">
-                        <td><a href="${c.id}">${c.productName}</a></td>
-                        <td>${c.price}</td>
-                        <td>${c.stock}</td>
-                        <td>
-                            <button class="btn btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Add</button>
-                            <!--<button class="btn btn-info"><i class="glyphicon glyphicon-info-sign"></i> Detail</button>-->
-                        </td>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Tabel Product</div>
+                <table class="table table-responsive">
+                    <tr class="success">
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Note</th>
                     </tr>
-                </c:forEach>
-            </table>
+                    <c:forEach var="c" items="${product}">
+                        <tr class="warning">
+                            <td><a href="${c.id}">${c.productName}</a></td>
+                            <td>${c.price}</td>
+                            <td>${c.stock}</td>
+                            <td>
+                                <b>
+                                    <a href="${pageContext.request.contextPath}/cart/add/${c.id}" class="btn btn-success">
+                                        <i class="glyphicon glyphicon-plus-sign"></i> Add
+                                    </a> 
+                                </b>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
+
         </div>
 
         <jsp:include page="footer.jsp"/>

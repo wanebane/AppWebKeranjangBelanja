@@ -12,7 +12,7 @@
     <body>
         <div class="container">
             <div class="jumbotron">
-                <h1>Registration Form</h1>
+                <h1><b>Registration Form</b></h1>
             </div>
             <form class="form-horizontal">
                 <div class="input-group">
